@@ -5,21 +5,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
-    <script src="food.js"></script>
-
+    <script src="js/food.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-
-  // Initialize Firebase
-
-
-</script>
-
+     <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAKD5IKntQGVkOOUBt3kfsylCXIPPXsrt4",
+        authDomain: "virtual-pet2-cc20f.firebaseapp.com",
+        databaseURL: "https://virtual-pet2-cc20f-default-rtdb.firebaseio.com",
+        projectId: "virtual-pet2-cc20f",
+        storageBucket: "virtual-pet2-cc20f.appspot.com",
+        messagingSenderId: "721959609366",
+        appId: "1:721959609366:web:cd5f0ec1a3e5f640c74137"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <meta charset="utf-8">
 
